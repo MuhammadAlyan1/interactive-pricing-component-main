@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Interactive pricing component</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+
+      <div class="component-container">
+        <section class="pageviews-section">
+          <p id="pageviews">100k PAGEVIEWS</p>
+          <div class="range">
+            <input type="range" min="1" max="5" id="pageViewsRange" />
+          </div>
+          <div class="price-month-container">
+            <p id="price">$16.00</p>
+            <p id="month">/ month</p>
+          </div>
+
+          <div class="monthly-yearly">
+            <input type="checkbox" id="monthly" />
+            <label for="monthly">Monthly Billing</label>
+            <p>Yearly Billing <span>25% discount</span></p>
+          </div>
+        </section>
+        <section class="list-button">
+          <div class="list-div">
+            <ul>
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+          </div>
+          <div class="button-div">
+            <button>Start my trial</button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
